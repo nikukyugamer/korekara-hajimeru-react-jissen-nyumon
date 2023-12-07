@@ -12,6 +12,8 @@ import TitledPanel from './TitledPanel';
 import ListTemplate from './ListTemplate';
 import StateBasic from './StateBasic';
 import StateParent from './StateParent';
+import EventMouse from './EventMouse';
+import EventError from './EventError';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,7 +22,12 @@ const body = <p>ようこそ、WINGプロジェクトへ！</p>
 
 root.render(
   <React.StrictMode>
-    <StateParent />
+    <EventMouse
+      alt="ロゴ画像"
+      beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif"
+      afterSrc="https://www.web-deli.com/image/home_chara.gif"
+    />
+    <EventError src="./images/_wings.jpg" alt="存在しないサンプル画像" />
   </React.StrictMode>
 );
 
