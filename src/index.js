@@ -14,6 +14,7 @@ import StateBasic from './StateBasic';
 import StateParent from './StateParent';
 import EventMouse from './EventMouse';
 import EventError from './EventError';
+import EventPropagation from './EventPropagation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,12 +23,7 @@ const body = <p>ようこそ、WINGプロジェクトへ！</p>
 
 root.render(
   <React.StrictMode>
-    <EventMouse
-      alt="ロゴ画像"
-      beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif"
-      afterSrc="https://www.web-deli.com/image/home_chara.gif"
-    />
-    <EventError src="./images/_wings.jpg" alt="存在しないサンプル画像" />
+    <EventPropagation />
   </React.StrictMode>
 );
 
