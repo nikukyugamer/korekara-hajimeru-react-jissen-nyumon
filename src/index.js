@@ -10,17 +10,12 @@ import TitledPanel from './TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const title = <p>メンバー募集中！</p>
+const body = <p>ようこそ、WINGプロジェクトへ！</p>
+
 root.render(
   <React.StrictMode>
-    <TitledPanel
-      title={
-        <p>メンバー募集中！</p>
-      }
-      body={
-        <p>ようこそ、WINGプロジェクトへ！</p>
-      }
-    >
-    </TitledPanel>
+    <TitledPanel title={title} body={body}></TitledPanel>
   </React.StrictMode>
 );
 
