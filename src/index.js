@@ -10,6 +10,7 @@ import SelectStyle from './SelectStyle';
 import StyledPanel from './StyledPanel';
 import TitledPanel from './TitledPanel';
 import ListTemplate from './ListTemplate';
+import StateBasic from './StateBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,20 +19,7 @@ const body = <p>ようこそ、WINGプロジェクトへ！</p>
 
 root.render(
   <React.StrictMode>
-    <ListTemplate src={books}>
-      {/* 呼び出し元配下のテンプレートを「テンプレートを返す関数」化する */}
-      {/* レンダープロップス */}
-      {elem => (
-        <>
-          <dt>
-            <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
-              {elem.title} ({elem.price}円)
-            </a>
-          </dt>
-          <dd>{elem.summary}</dd>
-        </>
-      )}
-    </ListTemplate>
+    <StateBasic init={0} />
   </React.StrictMode>
 );
 
