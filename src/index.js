@@ -11,6 +11,7 @@ import StyledPanel from './StyledPanel';
 import TitledPanel from './TitledPanel';
 import ListTemplate from './ListTemplate';
 import StateBasic from './StateBasic';
+import StateParent from './StateParent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,7 +20,7 @@ const body = <p>ようこそ、WINGプロジェクトへ！</p>
 
 root.render(
   <React.StrictMode>
-    <StateBasic init={0} />
+    <StateParent />
   </React.StrictMode>
 );
 
