@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import SelectStyle from './SelectStyle';
+import StyledPanel from './StyledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <SelectStyle mode="light" />
+    <StyledPanel>
+      <p>メンバー募集中！</p>
+      <p>ようこそ、WINGSプロジェクトへ！</p>
+    </StyledPanel>
   </React.StrictMode>
 );
 
