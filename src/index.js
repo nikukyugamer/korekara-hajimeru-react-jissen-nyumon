@@ -6,15 +6,21 @@ import reportWebVitals from './reportWebVitals';
 
 import SelectStyle from './SelectStyle';
 import StyledPanel from './StyledPanel';
+import TitledPanel from './TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <StyledPanel>
-      <p>メンバー募集中！</p>
-      <p>ようこそ、WINGSプロジェクトへ！</p>
-    </StyledPanel>
+    <TitledPanel
+      title={
+        <p>メンバー募集中！</p>
+      }
+      body={
+        <p>ようこそ、WINGプロジェクトへ！</p>
+      }
+    >
+    </TitledPanel>
   </React.StrictMode>
 );
 
